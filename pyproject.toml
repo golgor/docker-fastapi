@@ -1,0 +1,23 @@
+[project]
+name = "docker-fastapi"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Robert Nyström", email = "robert.nystrom@toolsense.io" }
+]
+dependencies = [
+    "fastapi>=0.111.0",
+    "pydantic>=2.8.2",
+    "sqlalchemy>=2.0.31",
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = [
+    "pytest>=8.2.2",
+    "coverage>=7.5.4",
+    "mypy>=1.10.1",
+]
